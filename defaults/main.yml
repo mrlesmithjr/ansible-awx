@@ -32,6 +32,24 @@ awx:
   pg_port: 5432
   pg_username: awx
   postgres_data_dir: /tmp/pgdocker
+
+  # RedHat pre-reqs
+  redhat_pre_reqs:
+    - bzip2
+    - gcc-c++
+    - gettext
+    - git
+    - gmp-devel
+    - libffi-devel
+    - nodejs
+    - npm
+    - openssl-devel
+    - python-crypto
+    - python-devel
+    - python-pip
+    - python-setuptools
+    - redhat-rpm-config
+
   repo_dir: $HOME/awx
   repo: https://github.com/ansible/awx.git
 
