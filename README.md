@@ -16,6 +16,8 @@ You can install required Ansible roles by running:
 ansible-galaxy install -r requirements.yml
 ```
 
+-   [resources](https://github.com/ansible/awx/blob/devel/INSTALL.md#system-requirements)
+
 ## Role Variables
 
 [defaults/main.yml](defaults/main.yml)
