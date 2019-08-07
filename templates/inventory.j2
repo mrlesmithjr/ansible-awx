@@ -6,8 +6,8 @@ awx_container_search_domains={{ awx['container_search_domains']|join(',') }}
 {% endif %}
 awx_task_hostname={{ awx['task_hostname'] }}
 awx_web_hostname={{ awx['web_hostname'] }}
-default_admin_password={{ awx['default_admin_password'] }}
-default_admin_user={{ awx['default_admin_user'] }}
+admin_password={{ awx['default_admin_password'] }}
+admin_user={{ awx['default_admin_user'] }}
 dockerhub_base=ansible
 dockerhub_version=latest
 host_port={{ awx['host_port'] }}
