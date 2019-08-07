@@ -59,11 +59,11 @@ awx:
   # lose the ability to decrypt your credentials
   secret_key: awxsecret
 
-  task_hostname: "{{ ansible_hostname }}"
+  task_hostname: awx
 
   update: true
 
   # Defines the version of AWX to install
   version: 6.0.0
 
-  web_hostname: "{{ ansible_hostname }}"
+  web_hostname: awxweb
