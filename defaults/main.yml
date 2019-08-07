@@ -26,13 +26,15 @@ awx:
   default_admin_password: password
   default_admin_user: admin
 
+  docker_compose_dir: /var/lib/awx/compose
+
   host_port: 80
   pg_database: awx
   # pg_hostname:            postgresql
   pg_password: awxpass
   pg_port: 5432
   pg_username: awx
-  postgres_data_dir: /tmp/pgdocker
+  postgres_data_dir: /var/lib/awx/pgdocker
 
   # RedHat pre-reqs
   redhat_pre_reqs:
