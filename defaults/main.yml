@@ -2,7 +2,7 @@
 # defaults file for ansible-awx
 awx:
   # Defines the version of Ansible to install
-  ansible_ver: 2.7.2
+  ansible_ver: 2.8.2
 
   # Container networking configuration
   # Set the awx_task and awx_web containers' search domain(s)
@@ -64,6 +64,6 @@ awx:
   update: true
 
   # Defines the version of AWX to install
-  version: 3.0.0
+  version: 6.0.0
 
   web_hostname: "{{ ansible_hostname }}"

@@ -17,9 +17,17 @@
   register: result
   until: result is successful
 
-- name: python_modules | Installing docker-py
+- name: python_modules | Ensuring Docker Python Modules Are Uninstalled
   pip:
-    name: docker-py
+    name: ["docker-py"]
+    state: absent
+  become: true
+  register: result
+  until: result is successful
+
+- name: python_modules | Installing Docker Python Modules
+  pip:
+    name: ["docker", "docker-compose"]
     state: present
   become: true
   register: result
