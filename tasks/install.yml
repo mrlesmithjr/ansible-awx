@@ -1,5 +1,5 @@
 ---
-- name: install | Cloning AWX Repo To
+- name: install | Cloning AWX Repo To {{ awx['repo_dir'] }}
   git:
     repo: "{{ awx['repo'] }}"
     dest: "{{ awx['repo_dir'] }}"

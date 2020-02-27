@@ -1,12 +1,12 @@
 ---
 # Upgrading these packages to ensure a successful Ansible install
-- name: python_modules | Updating Python Modules
-  pip:
-    name: ["pip", "cffi", "pyOpenSSL"]
-    state: latest
-  become: true
-  register: result
-  until: result is successful
+# - name: python_modules | Updating Python Modules
+#   pip:
+#     name: ["pip", "cffi", "pyOpenSSL"]
+#     state: latest
+#   become: true
+#   register: result
+#   until: result is successful
 
 - name: python_modules | Installing Ansible {{ awx['ansible_ver'] }}
   pip:
