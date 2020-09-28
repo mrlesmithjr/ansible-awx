@@ -9,8 +9,8 @@
   when: ansible_distribution != "Fedora"
 
 - name: redhat | Installing AWX Pre-Reqs
-  yum:
-    name: "{{ awx['redhat_pre_reqs'] }}"
+  package:
+    name: "{{ awx.redhat_pre_reqs }}"
     state: present
   become: true
   register: result
