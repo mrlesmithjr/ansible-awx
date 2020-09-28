@@ -1,3 +1,51 @@
+commit d1a9ad9bd269b836a49c99dbdaaf00a291420920
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Mon Sep 28 19:02:39 2020 -0400
+
+    Deleted old tests that are no longer needed
+
+commit 8bfc5dbff189eba7a05e4c9ef6b57a9592202a92
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Mon Sep 28 19:02:15 2020 -0400
+
+    Updated inventory template for AWX to use for install
+
+commit 497b049c24b135044fdbc11958e6aecb40081d97
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Mon Sep 28 19:01:57 2020 -0400
+
+    Cleaned up formatting of tasks, etc.
+
+commit e9424ae04b961d107fc70dc8c96048d0b3452c05
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Mon Sep 28 19:01:26 2020 -0400
+
+    Updated Galaxy info
+
+commit 600177c1cabad4cd200506a984415c2434cffe6e
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Mon Sep 28 19:01:01 2020 -0400
+
+    Updated Ansible and AWX versions
+
+commit 55a25aeb3e80da075621f90b4ad764830e855a78
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Mon Sep 28 19:00:43 2020 -0400
+
+    Updated example playbook
+
+commit c5c837192f3c9e4d9ef648d9a515f070b36369a9
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Mon Sep 28 18:59:12 2020 -0400
+
+    Updated Ansible role requirements
+
+commit 49fb7510ffbfa855b5d12e792b0e47663cc03127
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Mon Sep 28 18:58:50 2020 -0400
+
+    Added new tasks files, etc. from Cookiecutter template
+
 commit 9db54f1718bfc311021946b79288696c56a601fb
 Author: Larry Smith Jr <mrlesmithjr@gmail.com>
 Date:   Mon Sep 28 18:57:40 2020 -0400
