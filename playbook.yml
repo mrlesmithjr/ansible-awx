@@ -1,8 +1,11 @@
 ---
-- hosts: awx
-  vars:
-    pri_domain_name: test.vagrant.local
-  roles:
-    - role: ansible-docker
-    - role: ansible-awx
+- name: Example Playbook
+  hosts: awx
   tasks:
+    - name: Include ansible-docker
+      include_role:
+        name: ansible-docker
+
+    - name: Include ansible-awx
+      include_role:
+        name: ansible-awx
