@@ -1,10 +1,10 @@
 ---
 - name: install | Cloning AWX Repo To
   git:
-    repo: "{{ awx['repo'] }}"
-    dest: "{{ awx['repo_dir'] }}"
-    version: "{{ awx['version'] }}"
-    update: "{{ awx['update'] }}"
+    repo: "{{ awx.repo }}"
+    dest: "{{ awx.repo_dir }}"
+    version: "{{ awx.version }}"
+    update: "{{ awx.update|bool }}"
     force: true
     accept_hostkey: true
   become: true
@@ -12,11 +12,11 @@
 - name: install | Configuring AWX Inventory
   template:
     src: inventory.j2
-    dest: "{{ awx['repo_dir'] + '/installer/inventory' }}"
+    dest: "{{ awx.repo_dir + '/installer/inventory' }}"
   become: true
 
 - name: install | Installing AWX
   command: ansible-playbook -i inventory install.yml
   args:
-    chdir: "{{ awx['repo_dir'] + '/installer' }}"
+    chdir: "{{ awx.repo_dir + '/installer' }}"
   become: true

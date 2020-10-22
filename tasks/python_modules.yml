@@ -2,7 +2,10 @@
 # Upgrading these packages to ensure a successful Ansible install
 - name: python_modules | Updating Python Modules
   pip:
-    name: ["pip", "cffi", "pyOpenSSL"]
+    name:
+      - pip
+      - cffi
+      - pyOpenSSL
     state: latest
   become: true
   register: result
@@ -12,14 +15,14 @@
   pip:
     name: ansible
     state: present
-    version: "{{ awx['ansible_ver'] }}"
+    version: "{{ awx.ansible_ver }}"
   become: true
   register: result
   until: result is successful
 
 - name: python_modules | Ensuring Docker Python Modules Are Uninstalled
   pip:
-    name: ["docker-py"]
+    name: docker-py
     state: absent
   become: true
   register: result
@@ -27,7 +30,9 @@
 
 - name: python_modules | Installing Docker Python Modules
   pip:
-    name: ["docker", "docker-compose"]
+    name:
+      - docker
+      - docker-compose
     state: present
   become: true
   register: result

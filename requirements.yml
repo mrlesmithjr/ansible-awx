@@ -1,2 +1,3 @@
 ---
+- src: https://github.com/mrlesmithjr/ansible-bootstrap-python
 - src: https://github.com/mrlesmithjr/ansible-docker
